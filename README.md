@@ -1,4 +1,4 @@
-dhruvvemula.github.com
+dhruvvemula.github.io
 ======================
 
 Personal website and blog
