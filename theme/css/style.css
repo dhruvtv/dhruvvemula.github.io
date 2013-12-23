@@ -1,0 +1,123 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+body {
+  margin: 0 auto;
+  color: #333333;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.6em;
+  padding: 0 15px 100px 15px;
+  width: 720px;
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  margin-top: 1.25em;
+  margin-bottom: 0em;
+  font-size: 32px;
+}
+h3 {
+  margin-bottom: 0em;
+  font-size: 28px;
+}
+h4 {
+  display: run-in;
+  font-size: 24px;
+}
+h2 + p {
+  margin-top: 0.5em;
+}
+h3 + p {
+  margin-top: 0.25em;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+a:active,
+a:focus,
+a:hover {
+  color: #0f714b;
+}
+blockquote {
+  color: #0f714b;
+  font-size: 22px;
+  font-style: italic;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+/* Will use these in Markdown */
+/* Headers at top of page/article */
+#banner {
+  margin: 50px 0;
+}
+#banner h2 {
+  color: #999999;
+}
+#banner h2 a {
+  color: #999999;
+}
+#banner #sitename {
+  color: #0f714b;
+  font-weight: 700;
+}
+/* Style for dates and other footers */
+.published {
+  color: #999999;
+}
+.entry-content a {
+  border-bottom: 1px solid lightgray;
+}
+/* Style for the page blog.html which displays the list of posts */
+#post-list {
+  line-height: 2em;
+  list-style: none;
+  padding-left: 0px;
+}
+#post-list a {
+  border-bottom: 1px solid lightgray;
+}
+#post-list .articles {
+  font-size: 24px;
+}
+#post-list .bits {
+  font-size: 18px;
+  margin-left: 10px;
+}
+#post-list span {
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 14px;
+  color: lightgray;
+  vertical-align: top;
+}
+#post-list .published {
+  float: right;
+  font-size: 16px;
+}
+#homepage {
+  position: absolute;
+  margin: 15%;
+  display: block;
+}
+#homepage h1 {
+  font-size: 60px;
+  color: #0f714b;
+  line-height: 1em;
+}
+#homepage ul {
+  text-align: center;
+  font-size: 32px;
+  list-style: none;
+  padding-left: 0px;
+}
+#homepage ul li {
+  display: inline-block;
+  line-height: 1em;
+}
+#homepage ul li a {
+  margin-right: 15px;
+}
