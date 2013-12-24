@@ -1,0 +1,187 @@
+// Colors
+@black: black;
+@dark-gray: #333; // almost black, better for text than black
+//@medium-gray: #666;
+@light-gray: #999; // for links and elements that don't need attention
+@lollipop-green: #0F714B; // Color inspired by Evernote iOS app
+
+// Fonts
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700); // regular for text, bold for headings
+
+body {
+  margin: 0 auto;
+  color: @dark-gray;
+  font-weight: 400;
+  font-family:  'Open Sans', sans-serif;
+//  font-family:  'Georgia', sans-serif;
+  font-size:    18px; // nice and big for blogs
+  line-height:  1.6em; // appropriate for the font
+  padding:      0 15px 100px 15px;
+  width:        720px;
+}
+
+// Adjusted header styles
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  margin-top: 1.25em;
+  margin-bottom: 0em; // to enable right behavior for h2 + p
+  font-size: 32px;
+}
+
+h3 {
+  margin-bottom: 0em;
+  font-size: 28px;
+}
+
+h4 {
+  display: run-in;
+  font-size: 24px;
+}
+
+h2 + p {
+    margin-top: 0.5em; // when a paragraph is right after h2, or vice versa
+  }
+  
+h3 + p {
+  margin-top: 0.25em;
+}
+
+// Links
+a {
+  color: @black; // in contrast to dark-gray
+
+  &:active, &:focus, &:hover {
+    color:  @lollipop-green;
+  }
+  
+  text-decoration: none;
+}
+
+.faint_underline {
+  border-bottom: 1px solid lightgray;
+}
+
+a.underline {
+  .faint_underline;
+}
+blockquote {
+  color: @lollipop-green;
+  font-size: 22px;
+  font-style: italic;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+//code {
+//  border: 1px;
+//  border-color: @lollipop-green;
+//  font-family: 'Courier New';
+//  font-size: 10px;
+//}
+
+/* Will use these in Markdown */
+//em     { font-style:   italic; }
+//strong { font-weight:  bold; }
+//sub    { font-size:    80%; }
+
+/* Headers at top of page/article */
+#banner {
+  margin: 50px 0; // top and bottom are 50, left and right are 0
+  h2 {
+    color: @light-gray;
+
+    a {
+      color: @light-gray;
+    }
+  }
+
+  #sitename {
+    color: @lollipop-green; // The site name
+    font-weight: 700;
+  }
+}
+
+/* Style for dates and other footers */
+.published {
+  color: @light-gray;
+}
+
+.entry-content {
+  a {
+    border-bottom: 1px solid lightgray; // faint-underline
+  }
+}
+/* Style for the page blog.html which displays the list of posts */
+#post-list {
+  line-height: 2em;
+  a {
+    .faint_underline;
+    &:visited {
+      //color: @light-gray; // change the 'already visited' color from ugly purple to dull gray
+    }
+  }
+  
+  .articles {
+    font-size: 24px;
+  }
+  
+  .bits {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  span {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 14px;
+    color: lightgray;
+    vertical-align: top;
+  }
+
+  .published {
+    float: right;
+    font-size: 16px;
+  }
+
+  list-style: none;
+  padding-left: 0px;
+}
+
+// Styles for the landing page of the web-site. Neat and minimal.
+#homepage {
+  position: absolute;
+  margin: 15%; // to make the text more-or-less center.
+  display: block;
+
+  h1 {
+    font-size: 60px; // huge - even bigger than usual h1
+    color: @lollipop-green;
+    line-height: 1em;
+  }
+
+  ul {
+    text-align: center;
+    font-size: 32px;
+    list-style:  none;
+    padding-left: 0px;
+
+    li {
+      display: inline-block; // horizontal list
+
+      a {
+        margin-right: 15px;
+      }
+      line-height: 1em;
+    }
+  }
+
+}
+
+// "Inspired" by johnmurray.io, Medium and and a bunch of other blogs :)
+// Dhruv Vemula 2013.
